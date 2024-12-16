@@ -97,9 +97,9 @@ const Home = () => {
               </div>
             </div>
             {/* Image */}
-            <div className="max-h-[530px] overflow-hidden rounded-md bg-gray-100">
+            <div className="max-h-[700px] overflow-hidden rounded-md bg-gray-100">
               <img
-                src="https://i.pinimg.com/564x/59/41/a0/5941a02c048f6226031a0487451c2651.jpg"
+                src="https://images.unsplash.com/photo-1734080512781-277a23a12d43?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
             </div>
