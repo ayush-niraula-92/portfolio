@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { Link, useLocation } from "react-router";
 import logo from "../assets/images/logo.png";
@@ -11,9 +11,13 @@ const Navbar = () => {
     setIsMobileMenuClosed(!isMobileMenuClosed);
   };
 
+  useEffect(() => {
+    setIsMobileMenuClosed(true);
+  }, [location]);
+
   return (
     <>
-      <nav className="bg-gray-800">
+      <nav className="bg-gray-800 sticky top-0 shadow-lg">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
