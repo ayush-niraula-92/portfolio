@@ -1,9 +1,131 @@
 import { Link } from "react-router";
+import { Button, Flex, Modal } from "antd";
+import { useState } from "react";
+import resumeImg from "../assets/images/dummy.png";
+import resumePDF from "../../src/assets/pdf/dummy.pdf";
+import heroBg from "../../src/assets/images/herobg.png";
 
 const Home = () => {
+  const [isModalResumeOpen, setIsResumeModalOpen] = useState(false);
+  const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
+  const [isPreviewModalOpen, setIsPreviewModalOpen] = useState(false);
+  const [isPreviewLoading, setIsPreviewLoading] = useState(false);
+  const [isDownloadLoading, setIsDownloadLoading] = useState(false);
+  const [copyEmailText, setCopyEmailText] = useState("Copy Email");
+
+  const showResumeModal = () => {
+    setIsResumeModalOpen(true);
+  };
+  const showEmailModal = () => {
+    setIsEmailModalOpen(true);
+  };
+
+  const handlePreview = () => {
+    setIsPreviewLoading(true);
+    setTimeout(() => {
+      setIsPreviewModalOpen(true);
+      setIsPreviewLoading(false);
+    }, 3000);
+  };
+
+  const handleDownload = () => {
+    setIsDownloadLoading(true);
+    setTimeout(() => {
+      const link = document.createElement("a");
+      link.href = resumePDF; // Path to the PDF file after import
+      link.download = "Ayush_Niraula.pdf"; // Specify the name of the file to be downloaded
+      link.click(); // Trigger the download
+      setIsDownloadLoading(false);
+    }, 3000);
+  };
+
+  const handleEmailCopy = () => {
+    navigator.clipboard.writeText("ayushniraula92@gmail.com");
+    setCopyEmailText("Copied!");
+    setTimeout(() => {
+      setCopyEmailText("Copy Email");
+    }, 1000);
+  };
+
   return (
     <>
       <section>
+        <Modal
+          title="Do you want to download the resume or preview it? 😁"
+          open={isModalResumeOpen}
+          centered
+          footer={null}
+          closeIcon={true}
+          closable={true}
+          onCancel={() => setIsResumeModalOpen(false)}
+        >
+          <div className="flex justify-center gap-4">
+            <Button
+              type="default"
+              onClick={handlePreview}
+              loading={isPreviewLoading}
+            >
+              Preview
+            </Button>
+            <Button
+              type="default"
+              onClick={handleDownload}
+              loading={isDownloadLoading}
+            >
+              Download
+            </Button>
+          </div>
+        </Modal>
+
+        <Modal
+          title="Let’s connect and get to work! Or just a quick ‘Hi’ works too. 😎"
+          open={isEmailModalOpen}
+          centered={true}
+          footer={null}
+          closeIcon={true}
+          closable={true}
+          onCancel={() => setIsEmailModalOpen(false)}
+        >
+          <div className="flex flex-col items-center gap-4 mt-4">
+            <input
+              type="text"
+              readOnly
+              value="ayushniraula92@gmail.com"
+              className="w-72 px-4 py-2 border rounded-md text-center bg-gray-100"
+            />
+            <Button type="primary" onClick={handleEmailCopy}>
+              {copyEmailText}
+            </Button>
+          </div>
+
+          {/* <iframe
+          src="https://drive.google.com/file/d/14GMx6VaVNNPsPoli8o1SmBwnIMiEsi23/preview"
+          width="100%"
+          
+          title="Resume Preview"
+        /> */}
+        </Modal>
+
+        <Modal
+          title="Resume Preview"
+          open={isPreviewModalOpen}
+          footer={null}
+          centered
+          width="80%" // Adjusted for responsiveness
+          bodyStyle={{ padding: 0 }}
+          destroyOnClose
+          onCancel={() => setIsPreviewModalOpen(false)}
+        >
+          {/* Image Embed */}
+          <div className="relative w-full">
+            <img
+              src={resumeImg}
+              alt="Resume"
+              className="rounded-lg shadow-lg w-full h-auto max-h-[80vh] object-contain"
+            />
+          </div>
+        </Modal>
+
         {/* Container */}
         <div className="mx-auto w-full max-w-7xl px-5 py-12 md:px-10 md:py-16 lg:py-20">
           {/* Component */}
@@ -12,6 +134,7 @@ const Home = () => {
             <div className="flex flex-col items-start gap-2">
               <div className="flex items-center rounded-md bg-gray-300 px-3 py-1">
                 <div className="mr-1 h-2 w-2 rounded-full bg-green-600"></div>
+
                 <p className="text-sm">Available for work</p>
               </div>
               <p className="text-sm text-gray-500 sm:text-xl">
@@ -64,44 +187,35 @@ const Home = () => {
                 <Link to="/work">
                   <p>Work Experience</p>
                 </Link>
-                <img
-                  src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b1465d46adaf3f26099edf_arrow.svg"
-                  alt=""
-                  className="inline-block"
-                />
+                ➡️
               </a>
               {/* Buttons */}
               <div className="flex flex-col gap-4 font-semibold sm:flex-row">
                 <a
+                  onClick={showEmailModal}
                   href="#"
                   className="flex items-center gap-4 rounded-md bg-black px-6 py-3 text-white"
                 >
-                  <img
-                    src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b147043fe6ab404e65635e_Envelope.svg"
-                    alt=""
-                    className="inline-block"
-                  />
+                  ✉️
                   <p>Email Me</p>
                 </a>
                 <a
-                  href="#"
-                  className="flex gap-4 rounded-md border border-solid border-black px-6 py-3"
+                  onClick={showResumeModal}
+                  className="flex gap-4 rounded-md border border-solid border-black px-6 py-3 cursor-pointer"
                 >
-                  <img
-                    src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b14704c8616ad7ba080fe0_Note.svg"
-                    alt=""
-                    className="inline-block"
-                  />
+                  🧑‍💻
                   <p>Resume</p>
                 </a>
               </div>
             </div>
             {/* Image */}
-            <div className="max-h-[700px] overflow-hidden rounded-md bg-gray-100">
+            <div className="max-h-[700px] overflow-hidden rounded-md bg-gray-100 relative group">
               <img
-                src="https://images.unsplash.com/photo-1734080512781-277a23a12d43?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
+                src={heroBg}
+                alt="Hero background"
+                className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-80"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black opacity-40 group-hover:opacity-30 transition-opacity duration-300 ease-in-out"></div>
             </div>
           </div>
         </div>
