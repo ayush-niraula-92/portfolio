@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Button, Flex, Modal } from "antd";
+import { Button, Modal } from "antd";
 import { useState } from "react";
 import resumeImg from "../assets/images/dummy.png";
 import resumePDF from "../../src/assets/pdf/dummy.pdf";
