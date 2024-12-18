@@ -101,13 +101,13 @@ const Navbar = () => {
                     Projects
                   </Link>
                   <Link
-                    to="/socials"
+                    to="/about"
                     className={clsx(
                       "rounded-md px-3 py-2 text-sm font-medium text-white",
-                      location.pathname === "/socials" ? "bg-gray-900" : ""
+                      location.pathname === "/about" ? "bg-gray-900" : ""
                     )}
                   >
-                    Socials
+                    About
                   </Link>
                   <Link
                     to="/contacts"
@@ -148,10 +148,10 @@ const Navbar = () => {
               Projects
             </Link>
             <Link
-              to="/socials"
+              to="/about"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
             >
-              Socials
+              About
             </Link>
             <Link
               to="/contacts"

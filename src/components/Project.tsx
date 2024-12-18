@@ -12,11 +12,10 @@ const Project = () => {
     description:'ashdbaksj hasdkja dhasjdh oahda sodhanos dano djasn dokajs doajsdoasijd naosdji anosdja nsdoajis dnoasjid naodlj aosdjsa ',
     imgLink : 'https://thebigsolutions.com/public/frontEnd/images/logo.png',
     features : [
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+    
     ],
     previewLink: 'https://www.google.com',
 codeLink: 'https://www.nepal.com'
@@ -27,11 +26,10 @@ codeLink: 'https://www.nepal.com'
     description:'ashdbaksj hasdkja dhasjdh oahda sodhanos dano djasn dokajs doajsdoasijd naosdji anosdja nsdoajis dnoasjid naodlj aosdjsa ',
     imgLink : 'https://thebigsolutions.com/public/frontEnd/images/logo.png',
     features : [
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+  
     ],
     previewLink: 'https://www.google.com',
 codeLink: 'https://www.nepal.com'
@@ -42,11 +40,10 @@ codeLink: 'https://www.nepal.com'
     description:'ashdbaksj hasdkja dhasjdh oahda sodhanos dano djasn dokajs doajsdoasijd naosdji anosdja nsdoajis dnoasjid naodlj aosdjsa ',
     imgLink : 'https://thebigsolutions.com/public/frontEnd/images/logo.png',
     features : [
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+
     ],
     previewLink: 'https://www.google.com',
 codeLink: 'https://www.nepal.com'
@@ -57,11 +54,10 @@ codeLink: 'https://www.nepal.com'
     description:'ashdbaksj hasdkja dhasjdh oahda sodhanos dano djasn dokajs doajsdoasijd naosdji anosdja nsdoajis dnoasjid naodlj aosdjsa ',
     imgLink : 'https://thebigsolutions.com/public/frontEnd/images/logo.png',
     features : [
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+
     ],
     previewLink: 'https://www.google.com',
 codeLink: 'https://www.nepal.com'
@@ -72,11 +68,10 @@ codeLink: 'https://www.nepal.com'
     description:'ashdbaksj hasdkja dhasjdh oahda sodhanos dano djasn dokajs doajsdoasijd naosdji anosdja nsdoajis dnoasjid naodlj aosdjsa ',
     imgLink : 'https://thebigsolutions.com/public/frontEnd/images/logo.png',
     features : [
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+
     ],
     previewLink: 'https://www.google.com',
 codeLink: 'https://www.nepal.com'
@@ -87,11 +82,10 @@ codeLink: 'https://www.nepal.com'
     description:'ashdbaksj hasdkja dhasjdh oahda sodhanos dano djasn dokajs doajsdoasijd naosdji anosdja nsdoajis dnoasjid naodlj aosdjsa ',
     imgLink : 'https://thebigsolutions.com/public/frontEnd/images/logo.png',
     features : [
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+
     ],
     previewLink: 'https://www.google.com',
 codeLink: 'https://www.nepal.com'
@@ -102,11 +96,10 @@ codeLink: 'https://www.nepal.com'
     description:'ashdbaksj hasdkja dhasjdh oahda sodhanos dano djasn dokajs doajsdoasijd naosdji anosdja nsdoajis dnoasjid naodlj aosdjsa ',
     imgLink : 'https://thebigsolutions.com/public/frontEnd/images/logo.png',
     features : [
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
-      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs d alskjdalkd jalsdkj',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+      'asjdkbaksdj asdhasdkhadlj lkajsdlkajs ',
+
     ],
     previewLink: 'https://www.google.com',
 codeLink: 'https://www.nepal.com'

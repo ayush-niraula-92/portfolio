@@ -21,13 +21,13 @@ const ProjectGrid = ({item:item}:{item:any}) => {
 
               {item?.features?.map((resp:any)=>{
                 return (
-                    <div className="mt-2 flex items-center">
+                    <div className="mt-2 flex items-center ">
                     <img
                       src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94a84be6cf60_check-mark.svg"
                       alt=""
                       className="mr-2 inline-block w-4"
                     />
-                    <p className="text-base">{resp}</p>
+                    <p className=" text-sm">{resp}</p>
                   </div>
                 )
               })}
@@ -37,13 +37,13 @@ const ProjectGrid = ({item:item}:{item:any}) => {
               <div className="mt-auto w-full flex justify-between">
                 <a
                   href={item?.previewLink}
-                  className="m-2 w-full rounded-md bg-black px-6 py-3 text-center font-semibold text-white"
+                  className="m-2 w-full rounded-md  px-6 py-3 text-center font-semibold dark:text-white underline"
                 >
                   Preview
                 </a>
                 <a
                   href={item?.codeLink} target="_blank"
-                  className="m-2 w-full rounded-md bg-black px-6 py-3 text-center font-semibold text-white"
+                  className="m-2 w-full rounded-md  px-6 py-3 text-center font-semibold dark:text-white underline"
                 >
                   Code
                 </a>

@@ -5,8 +5,8 @@ import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router";
 import Work from "./components/Work";
 import Project from "./components/Project";
-import Social from "./components/Social";
 import Contact from "./components/Contact";
+import About from "./components/About";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work/>} />
         <Route path="/projects" element={<Project />} />
-        <Route path="/socials" element={<Social />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contacts" element={<Contact />} />
       </Routes>
       <Footer />
