@@ -34,7 +34,7 @@ const Footer = () => {
                 className="group relative flex h-12 w-12 items-center justify-center rounded-full  hover:bg-slate-500 transition-all"
               >
                 <img
-                  src="https://www.svgrepo.com/show/507717/github-square.svg"
+                  src="https://www.svgrepo.com/show/494149/github.svg"
                   alt="GitHub"
                   className="h-6 w-6 transition-all group-hover:scale-110"
                 />

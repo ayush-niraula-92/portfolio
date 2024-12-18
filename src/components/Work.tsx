@@ -1,84 +1,116 @@
 const Work = () => {
+const workDetails =[
+  {
+    CompanyName : "Company Name",
+    designation : "Designation",
+    duration : "2023 - Present",
+    description : [
+      "Description 1 lorem asdkjas dajsh daishd aid haisdu asidu hasdiuahs diash daiduh asdih asiduh asiduh asdiuahs diaush daisudh aisduha sdiuah diauhsdaidu haid uh aishdai sudh asdha sdasdiauhs dashd asoidha sodihas doashid ",
+      "Description 2",
+      "Description 3",
+      "Description 4",
+    ]
+  },
+  {
+    CompanyName : "Company Name",
+    designation : "Designation",
+    duration : "Duration",
+    description : [
+      "Description 1",
+      "Description 2",
+      "Description 3",
+      "Description 4",
+    ]
+  },
+  {
+    CompanyName : "Company Name",
+    designation : "Designation",
+    duration : "Duration",
+    description : [
+      "Description 1",
+      "Description 2",
+      "Description 3",
+      "Description 4",
+    ]
+  },
+]
+
   return (
     <>
-      <section>
-        {/* Container */}
-        <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
-          {/* Title */}
-          <p className="text-center text-sm font-bold uppercase">
-            3 easy steps
-          </p>
-          <h2 className="text-center text-3xl font-bold md:text-5xl">
-            How it works
-          </h2>
-          <p className="mx-auto mb-8 mt-4 max-w-lg text-center text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit ut
-            aliquam,purus sit amet luctus magna fringilla urna
-          </p>
-          {/* Content */}
-          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-            {/* List */}
-            <div className="flex h-full flex-col [grid-area:2/1/3/2] lg:[grid-area:1/2/2/3]">
-              {/* Item */}
-              <a
-                className="mb-8 flex max-w-lg justify-center gap-4 rounded-xl border border-solid border-gray-300 px-6 py-5 text-black"
-                href="#w-tabs-0-data-w-pane-0"
-              >
-                <div className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-gray-100">
-                  <p className="text-sm font-bold sm:text-base">1</p>
+<div className="dark:text-white py-10">
+  <div className=" max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flow-root">
+      <ul className="-mb-8">
+
+
+
+        {workDetails.map((item)=>{
+          return(
+            <li>
+            <div className="relative pb-8">
+              <span className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
+              <div className="relative flex items-start space-x-3">
+                <div>
+                  <div className="relative px-1">
+                    <div className="h-8 w-8 bg-blue-500 rounded-full ring-8 ring-white flex items-center justify-center">
+                      <svg className="text-white h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-                <div className="ml-4 flex flex-col gap-2">
-                  <h5 className="text-xl font-bold">Find Component</h5>
-                  <p className="text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit ut
-                    aliquam, purus sit.
-                  </p>
+                <div className="min-w-0 flex-1 py-0">
+                  <div className="text-md text-gray-500">
+                    <div>
+                      <a href="#" className="font-medium dark:text-white mr-2">{item?.CompanyName}</a>
+  
+                      <a href="#"
+                        className="my-0.5 relative inline-flex items-center bg-white rounded-full border border-gray-300 px-3 py-0.5 text-sm">
+                        <div className="absolute flex-shrink-0 flex items-center justify-center">
+                          <span className="h-1.5 w-1.5 rounded-full bg-green-500" aria-hidden="true"></span>
+                        </div>
+                        <div className="ml-3.5 font-medium text-gray-900">{item?.designation}</div>
+                      </a>
+                    </div>
+                    <span className="whitespace-nowrap text-sm">{item?.duration}</span>
+                  </div>
+                  <div className="mt-2 ">
+                    
+                <ul className="list-inside space-y-2 ">
+                  {item.description.map((desc, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className="mr-2 text-blue-500">•</span>
+                      <p>{desc}</p>
+                    </li>
+                  ))}
+                </ul>
+                   
+                  </div>
                 </div>
-              </a>
-              {/* Item */}
-              <a
-                className="mb-8 flex max-w-lg justify-center gap-4 px-6 py-5 text-black"
-                href="#w-tabs-0-data-w-pane-1"
-              >
-                <div className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-gray-100">
-                  <p className="text-sm font-bold sm:text-base">2</p>
-                </div>
-                <div className="ml-4 flex flex-col gap-2">
-                  <h5 className="text-xl font-bold">Copy and Paste</h5>
-                  <p className="text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit ut
-                    aliquam, purus sit.
-                  </p>
-                </div>
-              </a>
-              {/* Item */}
-              <a
-                className="mb-8 flex max-w-lg justify-center gap-4 px-6 py-5 text-black"
-                href="#w-tabs-0-data-w-pane-2"
-              >
-                <div className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-gray-100">
-                  <p className="text-sm font-bold sm:text-base">3</p>
-                </div>
-                <div className="ml-4 flex flex-col gap-2">
-                  <h5 className="text-xl font-bold">Done</h5>
-                  <p className="text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit ut
-                    aliquam, purus sit.
-                  </p>
-                </div>
-              </a>
+              </div>
             </div>
-            {/* Image */}
-            <img
-              alt=""
-              src="https://firebasestorage.googleapis.com/v0/b/flowspark-1f3e0.appspot.com/o/Tailspark%20Images%2FPlaceholder%20Image.svg?alt=media&token=375a1ea3-a8b6-4d63-b975-aac8d0174074"
-              className="block h-full w-full overflow-hidden [grid-area:1/1/2/2] lg:[grid-area:1/1/2/2]"
-            />
-          </div>
-        </div>
-      </section>
+          </li>
+         
+          )
+        })}
+
+    
+
+
+
+
+      </ul>
+    </div>
+  </div>
+
+</div>
     </>
   );
 };
 
 export default Work;
+
+
+
