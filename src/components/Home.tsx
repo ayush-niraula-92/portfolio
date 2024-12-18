@@ -1,9 +1,10 @@
 import { Link } from "react-router";
 import { Button, Modal } from "antd";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import resumeImg from "../assets/images/dummy.png";
 import resumePDF from "../../src/assets/pdf/dummy.pdf";
 import heroBg from "../../src/assets/images/herobg.png";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Home = () => {
   const [isModalResumeOpen, setIsResumeModalOpen] = useState(false);
@@ -12,6 +13,8 @@ const Home = () => {
   const [isPreviewLoading, setIsPreviewLoading] = useState(false);
   const [isDownloadLoading, setIsDownloadLoading] = useState(false);
   const [copyEmailText, setCopyEmailText] = useState("Copy Email");
+  const [toggleText, setToggleText] = useState("☀️ Light Mode");
+  const { theme, setTheme } = useContext(ThemeContext);
 
   const showResumeModal = () => {
     setIsResumeModalOpen(true);
@@ -42,9 +45,17 @@ const Home = () => {
   const handleEmailCopy = () => {
     navigator.clipboard.writeText("ayushniraula92@gmail.com");
     setCopyEmailText("Copied!");
+
     setTimeout(() => {
       setCopyEmailText("Copy Email");
     }, 1000);
+  };
+
+  const toggleDarkMode = () => {
+    setToggleText(
+      toggleText === "☀️ Light Mode" ? "🌙 Dark Mode" : "☀️ Light Mode"
+    );
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
@@ -93,9 +104,22 @@ const Home = () => {
               value="ayushniraula92@gmail.com"
               className="w-72 px-4 py-2 border rounded-md text-center bg-gray-100"
             />
-            <Button type="primary" onClick={handleEmailCopy}>
-              {copyEmailText}
-            </Button>
+
+            <div className="block sm:hidden">
+              <Button type="primary" className="block">
+                <a href="mailto:ayushniraula92@gmail.com">Open Mail</a>{" "}
+              </Button>
+            </div>
+
+            <div className="hidden sm:block">
+              <Button
+                type="primary"
+                onClick={handleEmailCopy}
+                className="block"
+              >
+                {copyEmailText}
+              </Button>
+            </div>
           </div>
 
           {/* <iframe
@@ -206,6 +230,12 @@ const Home = () => {
                   🧑‍💻
                   <p>Resume</p>
                 </a>
+                <button
+                  className="flex items-center px-4 py-2 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-lg transition-colors duration-300"
+                  onClick={toggleDarkMode}
+                >
+                  <span id="mode-text">{toggleText}</span>
+                </button>
               </div>
             </div>
             {/* Image */}
